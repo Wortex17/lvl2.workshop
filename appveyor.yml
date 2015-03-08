@@ -9,6 +9,7 @@ init:
   - git config --global core.autocrlf input
 
 environment:
+# Build matrices
   matrix:
   # node.js
   - nodejs_version: 0.10
@@ -16,10 +17,12 @@ environment:
   # io.js
   - nodejs_version: 1.0
 
-    allow_failures:
-      # currently unsupported build environments by atom-shell
-      - nodejs_version: 0.11
-      - nodejs_version: 1.0
+# Matrix Configurations
+matrix:
+  allow_failures:
+    # currently unsupported build environments by atom-shell
+    - nodejs_version: 0.11
+    - nodejs_version: 1.0
 
 
 platform:
