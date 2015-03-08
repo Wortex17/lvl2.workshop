@@ -1,7 +1,8 @@
 # appveyor file
 # http://www.appveyor.com/docs/appveyor-yml
 
-version: "0.0.1-ci.{build}-{branch}"
+#version: "0.0.1-ci.{build}-{branch}"
+version: "0.0.1-ci.{build}"
 
 clone_folder: c:\lvl2\lvl2.workshop
 
