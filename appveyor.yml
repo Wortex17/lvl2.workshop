@@ -39,7 +39,8 @@ install:
   - npm --version
   - npm install -g grunt-cli
   - npm install
-  - grunt --verbose shell:build
+  - npm config list
+  #- grunt --verbose shell:build
 
 test_script:
   - node --version
