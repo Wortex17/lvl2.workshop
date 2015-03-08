@@ -1,21 +1,24 @@
 # appveyor file
 # http://www.appveyor.com/docs/appveyor-yml
 
-version: "{build}"
+version: "0.0.1-ci.{build}-{branch}"
 
 clone_folder: c:\lvl2\lvl2.workshop
 
 init:
   - git config --global core.autocrlf input
 
+# Do not build on tags (GitHub only)
+skip_tags: true
+
 environment:
 # Build matrices
   matrix:
   # node.js
-  - nodejs_version: 0.10
-  - nodejs_version: 0.11
+  #- nodejs_version: 0.10
+  #- nodejs_version: 0.11
   # io.js
-  - nodejs_version: 1.0
+  #- nodejs_version: 1.0
 
 # Matrix Configurations
 matrix:
@@ -34,7 +37,7 @@ install:
   - cmd: SET PATH=C:\python27;%PATH%
   - npm install -g grunt-cli
   - npm install
-  - grunt build:shell
+  - grunt shell:build
 
 test_script:
   - node --version
