@@ -37,7 +37,7 @@ install:
   - cmd: SET PATH=C:\python27;%PATH%
   - npm install -g grunt-cli
   - npm install
-  - grunt shell:build
+  - grunt --verbose shell:build
 
 test_script:
   - node --version
