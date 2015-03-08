@@ -40,6 +40,7 @@ install:
   - npm install -g grunt-cli
   - npm install
   - npm config list
+  - dir C:\Program Files (x86)\MSBuild\12.0\bin\
   #- grunt --verbose shell:build
 
 test_script:
