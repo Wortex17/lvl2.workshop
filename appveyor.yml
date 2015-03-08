@@ -16,9 +16,10 @@ environment:
   # io.js
   - nodejs_version: 1.0
 
-  allow_failures:
-    # currently unsupported build environments by atom-shell
-    - nodejs_version: "0.11"
+    allow_failures:
+      # currently unsupported build environments by atom-shell
+      - nodejs_version: 0.11
+      - nodejs_version: 1.0
 
 
 platform:
