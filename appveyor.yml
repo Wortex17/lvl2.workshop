@@ -18,7 +18,7 @@ environment:
 
   allow_failures:
     # currently unsupported build environments by atom-shell
-    - nodejs_version: 0.11
+    - nodejs_version: "0.11"
 
 
 platform:
