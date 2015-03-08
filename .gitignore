@@ -27,5 +27,9 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-#JetBrains IDEs
+# JetBrains IDEs
 .idea
+
+
+# Deployed Files
+/deploy/
