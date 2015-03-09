@@ -7,7 +7,7 @@ var lvl2workshopJson = packageJson['lvl2.workshop'];
 
 module.exports = function(grunt) {
 
-    grunt.loadNpmTasks('grunt-build-atom-shell');
+    grunt.loadNpmTasks('./grunt-build-atom-shell');
 
     var tmpDir = os.tmpdir();
     var homeDir = process.env.HOME || process.env.USERPROFILE;

@@ -1,0 +1,51 @@
+{
+  "name": "grunt-build-atom-shell",
+  "description": "Grunt task to build atom-shell and rebuild node modules",
+  "version": "1.1.5",
+  "main": "grunt.js",
+  "dependencies": {
+    "fs-plus": "^2.3.2",
+    "grunt": "0.4",
+    "rx": "^2.3.20",
+    "npm": "~1.4.5",
+    "underscore": "^1.7.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/paulcbetts/grunt-build-atom-shell/raw/master/LICENSE.md"
+    }
+  ],
+  "homepage": "https://github.com/paulcbetts/grunt-build-atom-shell",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulcbetts/grunt-build-atom-shell.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paulcbetts/grunt-build-atom-shell/issues"
+  },
+  "gitHead": "680fdc8a9303d985f2a79fe015fbdd374833f3c0",
+  "_id": "grunt-build-atom-shell@1.1.5",
+  "scripts": {},
+  "_shasum": "83f74326e576b816bdb3bbb6d64c942631451ccc",
+  "_from": "grunt-build-atom-shell@>=1.1.5 <2.0.0",
+  "_npmVersion": "2.1.10",
+  "_nodeVersion": "0.10.33",
+  "_npmUser": {
+    "name": "paulcbetts",
+    "email": "paul@paulbetts.org"
+  },
+  "maintainers": [
+    {
+      "name": "paulcbetts",
+      "email": "paul@paulbetts.org"
+    }
+  ],
+  "dist": {
+    "shasum": "83f74326e576b816bdb3bbb6d64c942631451ccc",
+    "tarball": "http://registry.npmjs.org/grunt-build-atom-shell/-/grunt-build-atom-shell-1.1.5.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/grunt-build-atom-shell/-/grunt-build-atom-shell-1.1.5.tgz",
+  "readme": "ERROR: No README data found!"
+}

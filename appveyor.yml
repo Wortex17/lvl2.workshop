@@ -47,7 +47,7 @@ install:
   - npm config set msvs_version 2013 --global
   - npm config list
   - cmd: PATH
-  - grunt --verbose shell:build
+  - grunt --verbose --debug shell:build
 
 test_script:
   - node --version
