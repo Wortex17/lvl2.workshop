@@ -60,6 +60,5 @@ module.exports = (grunt) ->
     proc.on 'close', (exitCode, signal) ->
       error ?= new Error(signal) if exitCode != 0
       results = {stderr: stderr.join(''), stdout: stdout.join(''), code: exitCode}
-      grunt.log.debug results.stdout if exitCode == 0
       grunt.log.error results.stderr if exitCode != 0
       callback(error, results, exitCode)
