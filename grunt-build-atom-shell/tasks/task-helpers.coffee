@@ -55,7 +55,10 @@ module.exports = (grunt) ->
       stdout.push(data.toString())
       grunt.log.debug data.toString()
 
-    proc.stderr.on 'data', (data) -> stderr.push(data.toString())
+    proc.stderr.on 'data', (data) ->
+      stderr.push(data.toString())
+      grunt.log.debug "DBG_ERR: " + data.toString()
+
     proc.on 'error', (processError) -> error ?= processError
     proc.on 'close', (exitCode, signal) ->
       error ?= new Error(signal) if exitCode != 0
