@@ -32,17 +32,21 @@ matrix:
 platform:
   - x86
 
+cache:
+  # Default directory (as defined in package.json) of the git repo
+  - C:\Users\appveyor\.lvl2.workshop\atom-shell\.git -> packages.json
+  # npm cache
+  - C:\Users\appveyor\AppData\Roaming\npm-cache
+
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
-  - cmd: SET PATH=C:\Program Files (x86)\MSBuild\12.0\bin\;%PATH%
-  - cmd: SET PATH=C:\python27;%PATH%
   - node --version
   - npm --version
   - npm install -g grunt-cli
   - npm install
+  - npm config set msvs_version 2013 --global
   - npm config list
   - cmd: PATH
-  - npm config set msvs_version 2013 --global
   #- grunt --verbose shell:build
 
 test_script:
