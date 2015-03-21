@@ -34,7 +34,16 @@ platform:
 
 cache:
   # Default directory (as defined in package.json) of the git repo
-  - C:\Users\appveyor\.lvl2.workshop\atom-shell\.git -> packages.json
+  - C:\Users\appveyor\.lvl2.workshop\atom-shell\.git -> package.json
+  # Submodules, to speed up the bootstrapping process
+  - C:\Users\appveyor\.lvl2.workshop\atom-shell\atom -> package.json
+  - C:\Users\appveyor\.lvl2.workshop\atom-shell\chromium_src -> package.json
+  - C:\Users\appveyor\.lvl2.workshop\atom-shell\docs -> package.json
+  - C:\Users\appveyor\.lvl2.workshop\atom-shell\external_binaries -> package.json
+  - C:\Users\appveyor\.lvl2.workshop\atom-shell\script -> package.json
+  - C:\Users\appveyor\.lvl2.workshop\atom-shell\spec -> package.json
+  - C:\Users\appveyor\.lvl2.workshop\atom-shell\tools -> package.json
+  - C:\Users\appveyor\.lvl2.workshop\atom-shell\vendor -> package.json
   # npm cache
   - C:\Users\appveyor\AppData\Roaming\npm-cache
 
