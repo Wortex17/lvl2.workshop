@@ -40,6 +40,7 @@ cache:
   - C:\Users\appveyor\.lvl2.workshop\atom-shell\chromium_src -> package.json
   - C:\Users\appveyor\.lvl2.workshop\atom-shell\docs -> package.json
   - C:\Users\appveyor\.lvl2.workshop\atom-shell\external_binaries -> package.json
+  - C:\Users\appveyor\.lvl2.workshop\atom-shell\node_modules -> package.json
   - C:\Users\appveyor\.lvl2.workshop\atom-shell\script -> package.json
   - C:\Users\appveyor\.lvl2.workshop\atom-shell\spec -> package.json
   - C:\Users\appveyor\.lvl2.workshop\atom-shell\tools -> package.json
