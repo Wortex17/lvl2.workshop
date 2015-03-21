@@ -7,7 +7,7 @@ var lvl2workshopJson = packageJson['lvl2.workshop'];
 
 module.exports = function(grunt) {
 
-    grunt.loadNpmTasks('./grunt-build-atom-shell');
+    grunt.loadNpmTasks('grunt-build-atom-shell');
 
     var tmpDir = os.tmpdir();
     var homeDir = process.env.HOME || process.env.USERPROFILE;
@@ -18,7 +18,9 @@ module.exports = function(grunt) {
         tag: lvl2workshopJson.shell.tag,
         nodeVersion: lvl2workshopJson.shell.nodeVersion,
         buildDir: lvl2workshopJson.shell.downloadDir.replace('#{HOME}', homeDir),
-        targetDir: lvl2workshopJson.shell.targetDir
+        targetDir: lvl2workshopJson.shell.targetDir,
+        stdout: null,
+        stderr: null
     };
 
     shellbuild.productName = (process.platform == 'darwin') ? shellbuild.productName+'.app' : shellbuild.productName;

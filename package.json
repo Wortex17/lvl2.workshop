@@ -26,8 +26,8 @@
       "binaryName": "lvl2"
     },
     "shell": {
-      "tag": "v0.21.2",
-      "nodeVersion": "0.21.2",
+      "tag": "v0.22.1",
+      "nodeVersion": "0.22.1",
 
       "downloadDir": "#{HOME}/.lvl2.workshop",
       "targetDir": "./deploy"
